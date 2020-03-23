@@ -1,0 +1,35 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+
+/* Wise dashboard base style */
+@import './font-anonymous.css';
+@import './sitebase.css';
+@import './gist.css';
+
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+/* CUSTOM UTILITIES */
+
+.st-caret-trasparent {
+    caret-color: transparent;
+}
+
+
+.st-blink-caret::after {
+    content: '';
+    @apply st-border-gray-100 st-border-r-4 st-border-solid;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        @apply st-border-transparent;
+    }
+    50% {
+        @apply st-border-gray-100;
+    }
+}

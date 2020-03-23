@@ -1,0 +1,30 @@
+html {
+    @apply st-antialiased;
+    @apply st-font-mono;
+    font-size: 16px;
+}
+
+body {
+    @apply st-bg-gray-900;
+    @apply st-text-gray-100;
+}
+
+/* Typography */
+h1 {
+    @apply st-text-3xl;
+    @apply st-leading-none;
+    @apply st-font-semibold;
+}
+
+h2 {
+    @apply st-text-xl;
+    @apply st-leading-none;
+}
+
+h3 {
+    @apply st-text-lg;
+}
+
+a {
+    @apply st-underline;
+}
