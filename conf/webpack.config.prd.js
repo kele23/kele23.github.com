@@ -50,7 +50,8 @@ module.exports = {
                                 require('tailwindcss')('./tailwind.config.js'),
                                 require('autoprefixer'),
                                 require('@fullhuman/postcss-purgecss')({
-                                    content: ['./**/*.html']
+                                    content: ['./src/**/*.html', './src/**/*.js'],
+                                    defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || []
                                 })
                             ]
                         }
