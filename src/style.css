@@ -1,0 +1,9 @@
+@tailwind base;
+
+@page {
+  size: A4;
+  margin: 17pt;
+}
+
+@tailwind components;
+@tailwind utilities;
